@@ -1,17 +1,27 @@
-import kotlin.random.Random
+import kotlin.math.sqrt
 
 fun main() {
-    val list= List(100){Random.nextInt(0,100)}
 
-    println(modifyList(list) { it.sum() })
+    val a = 1
 
+    val b = 22
 
+    println(a.isSimple())
+    println(b.isSimple())
 
 }
 
-inline fun modifyList (list: List<Int>,modify:(List<Int>)->Int): Int{
-    return modify(list)
+fun Int.isSimple(): Boolean {
+    if(this < 2)
+        return true
+    for (i in 2 until sqrt(this.toDouble()).toInt()){
+        if(this%i==0)
+            return false
+    }
+    return true
 }
+
+
 
 
 
