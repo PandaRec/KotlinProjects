@@ -1,14 +1,13 @@
 
 fun main() {
 
-val dog = Dog()
-    dog.age=-1
-    dog.name=null
-    dog.weight = -1
+val book = Book("book")
+    book.price=123f
+    book.year = 123
+    println(book.name)
+    println(book.year)
+    println(book.price)
 
-    println(dog.age)
-    println(dog.name)
-    println(dog.weight)
 
 
 }
