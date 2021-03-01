@@ -1,0 +1,3 @@
+interface Clean {
+    fun clean()
+}
