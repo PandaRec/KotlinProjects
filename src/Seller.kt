@@ -6,4 +6,5 @@ class Seller(name: String, age:Int) : Employee(name, age),Clean {
     override fun clean() {
         println("seller cleaning")
     }
+
 }

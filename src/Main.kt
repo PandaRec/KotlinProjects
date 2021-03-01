@@ -23,6 +23,10 @@ fun main() {
             worker.clean()
     }
 
+    val listOfCleaners = list.filter { it is Clean }.map { it as Clean }
+    for(i in listOfCleaners)
+        i.clean()
+
 
 }
 
