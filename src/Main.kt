@@ -1,14 +1,10 @@
 fun main() {
+    println(MyRandom.random())
+    println(MyRandom.random(1,10))
+    println(MyRandom.random(1,10))
+    println(MyRandom.randomDay())
+    println(MyRandom.randomDay())
 
-    val sportsmen = Sportsmen()
-//    sportsmen.getVodonos(object : Vodonos{
-//        override fun bringWater() {
-//            println("bringing water...")
-//
-//        }
-//    })
-
-    sportsmen.getVodonos { println("bringing water...") }
 
 
 }

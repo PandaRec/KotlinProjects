@@ -1,3 +1,0 @@
-interface Vodonos {
-    fun bringWater()
-}
