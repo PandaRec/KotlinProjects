@@ -1,15 +1,18 @@
-import Month.*
-import Season.*
 fun main() {
-    val month = SEPTEMBER
-    val season = when(month){
-        DECEMBER,JANUARY, FEBRUARY -> WINTER
-        MARCH, APRIL, MAY -> SPRING
-        JUNE, JULY, AUGUST -> SUMMER
-        SEPTEMBER, OCTOBER, NOVEMBER -> AUTUMN
+    val list = mutableListOf<Employee>()
+    for(i in 1..10){
+        list.add(Employee("Employee $i",i))
     }
-    println(season)
-    println(season.tempAverage)
+
+    for(i in 1..10){
+        list.add(Developer("Employee $i",i,"Language $i"))
+    }
+
+    for (i in 0 until list.size){
+        println("name: ${list[i].name}")
+        list[i].work()
+    }
+
 
 }
 
